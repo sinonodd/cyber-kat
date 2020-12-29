@@ -2,8 +2,8 @@
   import {Link} from "svelte-routing";
   let isOpen = false;  
 </script>
-<nav class="container border-bottom border-secondary d-sm-flex justify-content-between align-items-center">
-    <div class="d-flex justify-content-between align-items-center py-4">  
+<nav class="container border-bottom border-secondary d-sm-flex py-4 ml-0 justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center ml-3">  
       <div class="">
         <a class="d-block"><Link to="/" class="d-block">CYBERKAT</Link></a>
       </div>     
@@ -25,9 +25,10 @@
       </div>      
     </div>
     <div class="{isOpen === true ? 'd-block' : 'd-none'} d-sm-flex">
-      <a class="ml-5 d-block nav-link"><Link to="/" class="d-block">Home</Link></a>
       <a class="ml-5 d-block nav-link"><Link to="about" class="d-block">About</Link></a>
       <a class="ml-5 d-block nav-link" ><Link to="projects" class="d-block">Projects</Link></a>
+      <a class="ml-5 d-block nav-link" ><Link to="commissions" class="d-block">Commissions</Link></a>  
+      <a class="ml-5 d-block nav-link" ><Link to="articles" class="d-block">Articles</Link></a>  
     </div>  
   </nav> 
 <style>

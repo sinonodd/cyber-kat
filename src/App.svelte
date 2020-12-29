@@ -2,8 +2,12 @@
   import { Router, Link, Route } from "svelte-routing";
   import Home from "./routes/Home.svelte";
   import About from "./routes/About.svelte";
+  import Projects from "./routes/Projects.svelte";  
+  import Commissions from "./routes/Commissions.svelte";  
+  import Articles from "./routes/Articles.svelte";  
   import Navbar from "./components/Navbar.svelte";
   export let url = "";
+  import Footer from './components/footer.svelte';  
 
 </script>
 
@@ -36,13 +40,18 @@
     </button>
     </div>
  </header>
- <section class="">
+ <section class="container-fluid">
    <Navbar/>
    <div>
       <Route path="about" component="{About}" />
+      <Route path="projects" component="{Projects}" />
+      <Route path="commissions" component="{Commissions}" />
+      <Route path="articles" component="{Articles}" />
       <Route path="/"><Home /></Route>
     </div>
+<Footer/>
   </section>
+
 </div>
 </Router>
 <style>

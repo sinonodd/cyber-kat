@@ -2,15 +2,13 @@
   import { Router, Link, Route } from "svelte-routing";
   import Cards from '../components/cards.svelte';  
   import Overhaul from '../components/overhaul.svelte';  
-  import Footer from '../components/footer.svelte';  
 </script>
 <div class="jumbotron bg-transparent">
   <strong class="display-4 d-block mb-2">Kat makes awesome websites for content creators</strong>
-  <span class="display-4">personal websites, startups, forums, stores</span>
-  <span class="display-4"> and whatever you want.</span>
+  <span class="display-4">Order your website and i'll start working on it :)</span>
 </div>
 <div class="container ml-2 d-flex justify-content-between">
-  <span>Featured projects</span>
+  <span class="ml-2">Featured projects</span>
   <a><Link to="projects">see all
 <svg fill="white" width="16" height="16" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
 		<path d="m501.33 245.32h-490.67c-5.888 0-10.667 4.779-10.667 10.667s4.779 10.667 10.667 10.667h490.67c5.888 0 10.667-4.779 10.667-10.667s-4.78-10.667-10.668-10.667z"/>
@@ -21,4 +19,3 @@
 </div>
 <Cards/>
 <Overhaul/>
-<Footer/>
